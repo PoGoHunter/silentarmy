@@ -1347,6 +1347,7 @@ static struct option    optlong[] =
 {
       {"help",		no_argument,		0,	OPT_HELP},
       {"h",		no_argument,		0,	OPT_HELP},
+      {"s",		no_argument,		0,	OPT_S},
       {"verbose",	no_argument,		0,	OPT_VERBOSE},
       {"v",		no_argument,		0,	OPT_VERBOSE},
       {"i",		required_argument,	0,	OPT_INPUTHEADER},
@@ -1411,6 +1412,9 @@ int main(int argc, char **argv)
 		nr_nonces = parse_num(optarg);
 		break ;
             case OPT_THREADS:
+                // ignored, this is just to conform to the contest CLI API
+                break ;
+            case OPT_S:
                 // ignored, this is just to conform to the contest CLI API
                 break ;
             case OPT_N:
