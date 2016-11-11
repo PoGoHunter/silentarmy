@@ -1337,6 +1337,7 @@ enum
     OPT_NONCES,
     OPT_THREADS,
     OPT_N,
+    OPT_S,
     OPT_K,
     OPT_LIST,
     OPT_USE,
